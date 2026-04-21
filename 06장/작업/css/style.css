@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Gothic&family=Noto+Sans+Meroitic&display=swap');
+
+body {
+    background-image: url(../images/bg.png);
+    color: #333;
+    font: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+header {
+    width: 1240px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    padding: 20PX 0 16PX;
+}
+header nav ul {
+    display: flex;
+    background-color: skyblue;
+   justify-content: center;
+    border-top: 2px solid #7c5d48;
+    border-bottom: 2px solid #7c5d48;
+   padding: 12px 0 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline double;
+
+}
+
+/* 메인 */
+main {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 62px 72px 32px 72px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+}
+/* aside */
+aside nav{
+    background-color: #fff;
+    border-radius: 16px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+    padding: 24px 28px;
+    margin-bottom: 24px;
+}
+
+aside nav h2 {
+    margin-bottom: 18px;
+    font-size:22px;
+    font-weight :bold;
+    color:#7c5d48;
+}
+
+aside nav ul {
+    font-size: 14px;
+}
+
+.categoryNav ul li {
+    list-style-type: square;
+    color:#7c5d48;
+    margin: 0 0 16px 20px;
+}
+
+.categoryNav ul li a {
+    color: #000000;
+}
+.recentNav ul li {
+   border-bottom: 1px solid #7c5d48;
+   padding-bottom: 10px;
+    margin-bottom: 22px;
+}
