@@ -1,42 +1,40 @@
-@charset "UTF-8";
+/* 기본 초기화 */
+* { margin: 0; padding: 0; box-box: border-box; }
+body { font-family: 'Montserrat', sans-serif; color: #333; line-height: 1.6; }
+ul { list-style: none; }
+a { text-decoration: none; color: inherit; }
 
-body {
-  font-family: "Gamja Flower", system-ui, "Noto Sans KR", sans-serif ;
-  background-color: rgb(215, 212, 213);
-  background-color: #d1d0d0;
-}
-h1 {
-  font-size: 200px ;
-  background-color: rgb(247, 249, 250);;
-  padding: 5px 0;
-  margin: 10px auto;
-  
-  text-align: center;
- 
-}
-p, ul{
-  font-size: 80px;
-  text-align: center;
-  margin-bottom: 100px;
+.container-inner { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.flex-container { display: flex; justify-content: space-between; gap: 40px; }
 
-  }
+/* 헤더 */
+header { padding: 20px 0; border-bottom: 1px solid #eee; }
+.header-inner { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+.logo { font-weight: 700; font-size: 24px; }
+.gnb ul { display: flex; gap: 30px; font-weight: 400; }
 
-img {
-  border-radius: 50%;
-}
-a{
-  background-color: #3a3939;
-  display: block;
-  padding: 30px 0;
-  border-radius: 10px;
-  color: #fff;
-  font-weight: 400;
-}
+/* 메인 비주얼 */
+.main-visual { padding: 60px 0; text-align: center; }
+.large-profile { width: 100%; max-height: 500px; object-fit: cover; margin-bottom: 30px; }
+.main-title h2 { font-weight: 300; font-size: 1.2rem; letter-spacing: 2px; }
+.main-title h1 { font-size: 3rem; font-weight: 700; }
 
-ul{
-  width: 300px;
-  margin: 0 auto;
-}
-li{
-  margin-bottom: 20px;
-}
+/* 소개 & 그리드 섹션 */
+section { padding: 80px 0; }
+.intro-left h3, .biography-title { font-size: 2rem; border-bottom: 2px solid #000; padding-bottom: 10px; }
+.intro-right { width: 60%; }
+.more-link { display: inline-block; margin-top: 20px; padding: 10px 20px; border: 1px solid #333; transition: 0.3s; }
+.more-link:hover { background: #000; color: #fff; }
+
+.content-image-box, .content-text-box { flex: 1; }
+.content-img { width: 100%; height: auto; }
+
+/* 약력 */
+.bio-grid { margin-top: 40px; }
+.bio-item { flex: 1; }
+.bio-item h4 { margin-bottom: 15px; font-size: 1.2rem; }
+.bio-item ul li { margin-bottom: 10px; font-size: 0.9rem; }
+.bio-item span { font-weight: 700; margin-right: 10px; }
+
+/* 푸터 */
+footer { padding: 40px 0; background: #f9f9f9; text-align: center; font-size: 0.8rem; }
